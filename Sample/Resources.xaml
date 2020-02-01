@@ -1,0 +1,77 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    >
+  <Style x:Key="styleCanvasInfo">
+    <Setter Property="Button.Template">
+      <Setter.Value>
+        <ControlTemplate>
+          <Grid>
+            <Grid.RowDefinitions>
+              <RowDefinition />
+              <RowDefinition />
+              <RowDefinition />
+              <RowDefinition />
+              <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition />
+              <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.Background>
+              <LinearGradientBrush>
+                <LinearGradientBrush.GradientStops>
+                  <GradientStop Color="LightBlue" Offset="0" />
+                  <GradientStop Color="WhiteSmoke" Offset="1" />
+                </LinearGradientBrush.GradientStops>
+              </LinearGradientBrush>
+            </Grid.Background>
+            <TextBlock Grid.Row="0" Grid.Column="0" Text="Canvas.Left: " />
+            <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Button}, AncestorLevel=1}, Path=(Canvas.Left)}" />
+            <TextBlock Grid.Row="1" Grid.Column="0" Text="Canvas.Top: " />
+            <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Button}, AncestorLevel=1}, Path=(Canvas.Top)}" />
+            <TextBlock Grid.Row="2" Grid.Column="0" Text="Canvas.Right: " />
+            <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Button}, AncestorLevel=1}, Path=(Canvas.Right)}" />
+            <TextBlock Grid.Row="3" Grid.Column="0" Text="Canvas.Bottom: " />
+            <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Button}, AncestorLevel=1}, Path=(Canvas.Bottom)}" />
+            <TextBlock Grid.Row="4" Grid.Column="0" Text="Canvas.ZIndex: " />
+            <TextBlock Grid.Row="4" Grid.Column="1" Text="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type Button}, AncestorLevel=1}, Path=(Canvas.ZIndex)}" />
+          </Grid>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+
+  <Button
+    x:Key="buttonTopLeft"
+    Canvas.Top="100" 
+    Canvas.Left="100"
+    Style="{StaticResource styleCanvasInfo}" />
+
+  <Button
+    x:Key="buttonTopRight"
+    Canvas.Top="100" 
+    Canvas.Right="100" 
+    Style="{StaticResource styleCanvasInfo}" />
+
+  <Button
+    x:Key="buttonBottomRight"
+    Canvas.Bottom="100" 
+    Canvas.Right="100" 
+    Style="{StaticResource styleCanvasInfo}" />
+
+  <Button
+    x:Key="buttonBottomLeft"
+    Canvas.Bottom="100" 
+    Canvas.Left="100" 
+    Style="{StaticResource styleCanvasInfo}" />
+
+  <Button
+    x:Key="buttonAll"
+    Canvas.Top="300" 
+    Canvas.Left="300" 
+    Canvas.Bottom="300" 
+    Canvas.Right="300" 
+    Style="{StaticResource styleCanvasInfo}" />
+
+  <Button x:Key="buttonNone" Style="{StaticResource styleCanvasInfo}" />
+</ResourceDictionary>

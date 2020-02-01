@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp3.0;net45;net462;net48</TargetFrameworks>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>WPF.JoshSmith.Controls.DragCanvas</RootNamespace>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Authors>Denxorz</Authors>
+    <PackageLicenseExpression>CPOL-1.02</PackageLicenseExpression>
+    <Description>A Canvas which manages dragging of the UIElements it contains.</Description>
+  </PropertyGroup>
+
+
+</Project>
