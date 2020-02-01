@@ -7,13 +7,21 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <Authors>Denxorz</Authors>
-    <PackageLicenseExpression>CPOL</PackageLicenseExpression>
+    <PackageLicenseExpression></PackageLicenseExpression>
     <Description>A Canvas which manages dragging of the UIElements it contains.</Description>
     <PackageIconUrl>https://github.com/denxorz/WPF.JoshSmith.Controls.DragCanvas/raw/master/icons8-hand-drag-50.png</PackageIconUrl>
     <PackageProjectUrl>https://github.com/denxorz/WPF.JoshSmith.Controls.DragCanvas</PackageProjectUrl>
     <RepositoryUrl>https://github.com/denxorz/WPF.JoshSmith.Controls.DragCanvas</RepositoryUrl>
     <PackageTags>wpf drag canvas josh smith</PackageTags>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
 
 </Project>
