@@ -1,6 +1,6 @@
 # WPF.JoshSmith.Controls.DragCanvas
 
-![Build status](https://github.com/denxorz/WPF.JoshSmith.Controls.DragCanvas/workflows/.NET%20Core/badge.svg) [![NuGet](https://buildstats.info/nuget/WPF.JoshSmith.Controls.DragCanvas)](https://www.nuget.org/packages/WPF.JoshSmith.Controls.DragCanvas/) [![License](http://img.shields.io/:license-mit-blue.svg)](https://github.com/denxorz/WPF.JoshSmith.Controls.DragCanvas/blob/master/LICENSE)
+![Build status](https://github.com/denxorz/WPF.JoshSmith.Controls.DragCanvas/workflows/.NET%20Core/badge.svg) [![NuGet](https://buildstats.info/nuget/WPF.JoshSmith.Controls.DragCanvas)](https://www.nuget.org/packages/WPF.JoshSmith.Controls.DragCanvas/) [![License](https://img.shields.io/badge/license-CPOL--1.02-blue)](https://github.com/denxorz/WPF.JoshSmith.Controls.DragCanvas/blob/master/LICENSE)
 
 ## What does it do?
 A Canvas which manages dragging of the UIElements it contains. This Canvas is made by Josh Smith.
