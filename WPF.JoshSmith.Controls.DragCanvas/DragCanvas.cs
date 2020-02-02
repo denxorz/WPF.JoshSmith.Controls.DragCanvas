@@ -30,9 +30,11 @@ namespace WPF.JoshSmith.Controls
         // Keeps track of which horizontal and vertical offset should be modified for the drag element.
         private bool modifyLeftOffset, modifyTopOffset;
 
-        // True if a drag operation is underway, else false.
-        private bool isDragInProgress;
-
+        /// <summary>
+        /// True if a drag operation is underway, else false.
+        /// </summary>
+        public bool IsDragInProgress { get; private set; }
+        
         #endregion // Data
 
         #region Attached Properties
@@ -251,7 +253,7 @@ namespace WPF.JoshSmith.Controls
         {
             base.OnPreviewMouseLeftButtonDown(e);
 
-            this.isDragInProgress = false;
+            this.IsDragInProgress = false;
 
             // Cache the mouse cursor location.
             this.origCursorLocation = e.GetPosition(this);
@@ -277,7 +279,7 @@ namespace WPF.JoshSmith.Controls
             // does not react to the mouse input.
             e.Handled = true;
 
-            this.isDragInProgress = true;
+            this.IsDragInProgress = true;
         }
 
         #endregion // OnPreviewMouseLeftButtonDown
@@ -289,7 +291,7 @@ namespace WPF.JoshSmith.Controls
             base.OnPreviewMouseMove(e);
 
             // If no element is being dragged, there is nothing to do.
-            if (this.ElementBeingDragged == null || !this.isDragInProgress)
+            if (this.ElementBeingDragged == null || !this.IsDragInProgress)
                 return;
 
             // Get the position of the mouse cursor, relative to the Canvas.
