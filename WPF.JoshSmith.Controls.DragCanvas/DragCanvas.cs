@@ -247,11 +247,11 @@ namespace WPF.JoshSmith.Controls
 
         #region Overrides
 
-        #region OnPreviewMouseLeftButtonDown
+        #region OnMouseLeftButtonDown
 
-        protected override void OnPreviewMouseLeftButtonDown(MouseButtonEventArgs e)
+        protected override void OnMouseLeftButtonDown(MouseButtonEventArgs e)
         {
-            base.OnPreviewMouseLeftButtonDown(e);
+            base.OnMouseLeftButtonDown(e);
 
             this.IsDragInProgress = false;
 
@@ -282,7 +282,7 @@ namespace WPF.JoshSmith.Controls
             this.IsDragInProgress = true;
         }
 
-        #endregion // OnPreviewMouseLeftButtonDown
+        #endregion // OnMouseLeftButtonDown
 
         #region OnPreviewMouseMove
 
