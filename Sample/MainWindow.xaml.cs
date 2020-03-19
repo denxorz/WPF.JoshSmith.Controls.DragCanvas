@@ -41,15 +41,15 @@ namespace Sample
 
             // Add the blocks which display their positions within the Canvas.
             foreach (string key in new string[] {
-                                                    "buttonTopLeft",
-                                                    "buttonTopRight",
-                                                    "buttonBottomRight",
-                                                    "buttonBottomLeft",
-                                                    "buttonAll",
-                                                    "buttonNone"
+                                                    "labelTopLeft",
+                                                    "labelTopRight",
+                                                    "labelBottomRight",
+                                                    "labelBottomLeft",
+                                                    "labelAll",
+                                                    "labelNone"
                                                 })
             {
-                Button button = this.FindResource(key) as Button;
+                Label button = this.FindResource(key) as Label;
                 this.dragCanvas.Children.Add(button);
             }
 
@@ -65,7 +65,7 @@ namespace Sample
             foreach (UIElement child in this.dragCanvas.Children)
             {
                 child.Visibility =
-                    child is Button && (child as Button).Content == null ?
+                    child is Label && (child as Label).Content == null ?
                     Visibility.Visible :
                     Visibility.Collapsed;
             }
