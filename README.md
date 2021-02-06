@@ -33,6 +33,9 @@ This package is based on the following articles:
 
 ## Versions & Release Notes
 
+version 2.0.1:
+ * Add 'net5.0'
+
 version 2.0: 
  * Replace 'preview mouse down' event by a normal one, so that buttons/comboboxes/scrollbars work when put on draggable controls. Downside, these controls can no longer be dragged on themselves.
  * Replace target `net462` and `net48` by `net472`
